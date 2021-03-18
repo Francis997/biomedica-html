@@ -2,6 +2,29 @@
     margin: 0;
 }
 
+.red{ color: #A60000;}
+.red-ligth{ color: #A60001 ;}
+.red-2{ color: #A60001; }
+.red-3{ color: #A60001; }
+.blue{ color: blue;}
+.gray{ color: gray; }
+.black{ color: #000; }
+.white{ color: white; }
+
+.f-mon{ font-family: 'Montserrat'; }
+.f-ubu{ font-family: 'Ubuntu'; }
+.f-ast{ font-family: 'assistant',sans-serif; }
+
+.h1{ font-size: 20px; }
+.h2{ font-size: 20px; }
+
+.p{ font-size: 20px; }
+
+.w-400{ font-weight: 400; }
+.w-600{ font-weight: 600; }
+.w-800{ font-weight: 800; }
+
+
 a {
     text-decoration: none;
     color: #A60000;
@@ -11,11 +34,29 @@ p{
     font-family: 'assistant',sans-serif;
     font-size: 20px;
     font-weight: 400;
-    color: #4D4D4D;
+    /*color: #4D4D4D;*/
 
     
 
 }
+
+.bg-overlay{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+    .bg-overlay::before{
+        content: ""; /*Obligatorio en after y before*/
+        display: block;
+        height: 100%;
+        width: 100%;
+        position:absolute;
+        top: 0%;
+        left: 0%;
+        background-color: #000;
+        opacity: .7;
+    }
 
 img {
     width: 100%;
@@ -31,6 +72,7 @@ h3 {
     margin: 10px 0px;
 
 }
+
 
 
 .linkMenu {
@@ -173,8 +215,7 @@ li:last-child {
     font-weight: 600;
     color: #303030;
 }
-
-.section2 {
+#section-2 {
     height: 550px;
     background-color: #ECF8FF;
     display: flex;
@@ -182,7 +223,6 @@ li:last-child {
     align-items: center;
     text-align: center;
 }
-
     .titleSection2{
         margin: 0px 0px 10px 0px;
         font-family: 'assistant',sans-serif;
@@ -223,32 +263,15 @@ li:last-child {
 
 /*SECTION 3*/
 
-.section3{
-    height: 75vh;
-    background-image: url(solo-equipos-ban.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    
 
+
+.section3{
+    background-image: url(solo-equipos-ban.jpg);    
 }
 
 
     .section3::before{
-        content: ""; /*Obligatorio en after y before*/
-        display: block;
-        height: 100%;
-        width: 100%;
-        position:absolute;
-        top: 0%;
-        left: 0%;
-        background-color: #000;
-        opacity: .7;
 
- 
-
-        
     }
 
 
@@ -352,24 +375,22 @@ li:last-child {
 /*FOOTER*/
 
 .footer{
-    height: 500px;
     background-color: #000;
-    overflow: hidden;
-    position: relative;
+    /*overflow: hidden;
+    position: relative;*/
 }
 
     .containerFooter{
-        position: absolute;
+       /* position: absolute;
         left: 0%;
         top: 0%;
-        left: 0%;
-        height: inherit;
-        width: 1200px;
+        left: 0%;*/
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: center;
-
+        justify-content: space-between;
+        color: #fff;
 
     }
 
@@ -378,5 +399,11 @@ li:last-child {
         padding: 0px 40px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        z-index: 1;
     }
 
+
+
+    ._75vh {
+        height: 75vh;
+    }
