@@ -1,8 +1,9 @@
 <?php include ("./partials/header.php") ?>
-<div>
+<link rel="stylesheet" href="/static/css/styles.css">
+<div class="container">
 
     asfpiajsfip
 
-    <p>asfipasjfioasf <?php include ("./partials/form.php") ?></p>
+    <p class="f-39px">asfipasjfioasf <?php include ("./partials/form.php") ?></p>
 </div>
 <?php include ("./partials/footer.php") ?>
